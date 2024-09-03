@@ -107,6 +107,68 @@
         font-weight: 500;
         padding : 5px;
     }
+/* <----------FOOTER----------------------> */
+    .footer {
+        width: 100%;
+        padding: 10px;
+    }
+    .phanDau {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
+    }
+    .logoTruongFooter {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    #truongFooter {
+        width: 70%;
+    }
+    .iconLienHe {
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .iconLienHe ul {
+        justify-content: center;
+        padding: 0;
+    }
+    .iconLienHe ul li {
+        font-size: 20px; 
+    }
+    .phanGiua {
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+    .noidungFooters {
+        width: 100%; 
+        margin-bottom: 1.5rem;
+    }
+    .noidungFooters:first-child, .noidungFooters:nth-child(2){
+        width: 100%;
+    }
+    .tieuDeNDF {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .thongtinNDF li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .tenNoiDungFooters {
+        justify-content: center;
+    }
+    .noiDungNhoFooter {
+        text-align: center;
+        margin-top: 5px;
+    }
+    .phanCuoi > span {
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
 /* -----------------TIN NOI BAT-------------------------------------- */
     h1.tieude {
         font-size: 1.5rem;
