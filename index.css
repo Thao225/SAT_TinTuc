@@ -87,13 +87,33 @@ h1.tieude{
     width : 100%;
     margin : 0 auto;
 }
+div.newsItem {
+    background-color: lavender;
+    border-radius: 1rem;
+    margin : 2rem auto 0;
+}
 .newsItem h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
+    color: rgb(26, 12, 40);
+    text-align: center;
 }
 .newsItem p {
     font-size: 1rem;
-    color: #c9bdbd;
+    color: #2d1313;
+    
+}
+.newsContent {
+    display : flex;
+    align-items: center;
+    padding : 1rem;
+}
+.mota {
+    padding : 1rem;
+}
+.newsImg {
+    width: 500px;
+    height: 300px;
 }
 
 /*---------- TIN NOI BAT -----------------------------------------------------------*/

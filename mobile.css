@@ -1,11 +1,38 @@
 
-@media screen and (max-width : 950px) {
+@media screen and (max-width : 1150px) {
     * {
         padding : 0;
         margin: 0;
         box-sizing: border-box;
         font-size : 14px;
     }
+    .newsContent {
+        display : block;
+        width : 100%;
+    }
+    .newsImg {
+        width: 50%;
+        padding : 0 5%;
+        height: auto;
+        float : left;
+
+    }
+    .gallery {
+        width : 500px;
+        margin : 0 auto;
+    }
+    .listImg {
+        width : 100%;
+    }
+    .listImg .image{
+        flex: 0 0 500px;
+        height : 300px;
+    }
+    .listImg img {
+        width : 500px;
+        height : 250px;
+    }
+
 }
 @media screen and (max-width : 767px) {
     * {
@@ -228,6 +255,15 @@
     }
     .newsItem p {
         font-size: 0.8rem;
-        color: #c9bdbd;
+    }
+    .newsContent {
+        display : block;
+        width : 100%;
+    }
+    .newsImg {
+        width: 100%;
+        padding : 0 10%;
+        height: auto;
+
     }
 }
