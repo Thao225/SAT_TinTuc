@@ -24,7 +24,7 @@
         padding : 5px;
     }
 
-/* -----------------Thanh menu-------------------------------------- */
+/* <----------THANH MENU-----------------------> */
     #sidebarMenu {
         position: fixed;
         right: -100%; 
@@ -107,6 +107,7 @@
         font-weight: 500;
         padding : 5px;
     }
+
 /* <----------FOOTER----------------------> */
     .footer {
         width: 100%;
@@ -147,6 +148,13 @@
     .noidungFooters:first-child, .noidungFooters:nth-child(2){
         width: 100%;
     }
+    .noiDungFooter > div {
+        padding : 0px;
+        margin : 0;
+    }
+    li.noiDungFooter {
+        margin : 0;
+    }
     .tieuDeNDF {
         text-align: center;
         font-size: 1rem;
@@ -164,10 +172,18 @@
         text-align: center;
         margin-top: 5px;
     }
+    .veChungToi {
+        display : flex;
+        gap : 5px;
+    }
+    .veChungToi > li > a {
+        display : block;
+    }
     .phanCuoi > span {
         text-align: center;
         margin-top: 1.5rem;
     }
+
 
 /* -----------------TIN NOI BAT-------------------------------------- */
     h1.tieude {
