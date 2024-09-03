@@ -112,6 +112,7 @@
     .footer {
         width: 100%;
         padding: 10px;
+        background-color: #1f203b;
     }
     .phanDau {
         flex-direction: column;
@@ -154,6 +155,7 @@
     }
     li.noiDungFooter {
         margin : 0;
+        padding : 10px 20px;
     }
     .tieuDeNDF {
         text-align: center;
@@ -165,8 +167,8 @@
         align-items: center;
         text-align: center;
     }
-    .tenNoiDungFooters {
-        justify-content: center;
+    .tenNoiDungFooter {
+        padding-top: 2px;
     }
     .noiDungNhoFooter {
         text-align: center;
@@ -174,8 +176,10 @@
     }
     .veChungToi {
         display : flex;
-        gap : 5px;
+        gap : 10px;
+        justify-content: center;
     }
+
     .veChungToi > li > a {
         display : block;
     }
