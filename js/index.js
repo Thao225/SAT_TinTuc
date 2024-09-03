@@ -1,25 +1,22 @@
 window.onload = function () {
     //---------- GO TO TOP --------------------------------------------------------------------//
-        let goTop =document.getElementById("gotoTop")
-        goTop.onclick = function() {
-            //cuộn trang đến một phần tử cụ thể mượt hơn
-            document.documentElement.scrollIntoView({ 
-                behavior: 'smooth' 
-            });
-        }
+    let goTop =document.getElementById("gotoTop")
+    goTop.onclick = function() {
+        //cuộn trang đến một phần tử cụ thể mượt hơn
+        document.documentElement.scrollIntoView({ 
+            behavior: 'smooth' 
+        });
+    }
+
+//---------- RESPONSIVE THANHMENU -----------------------------------------------------------//
     
-    //---------- RESPONSIVE THANHMENU -----------------------------------------------------------//
-        let btn = document.querySelector("#menuBtn")
-        let thanhMenu = document.querySelector(".thanhmenu")
-        btn.onclick = function () {
-            thanhMenu.classList.toggle("show");
-            document.documentElement.scrollIntoView({ 
-                behavior: 'smooth' 
-            });
-    
-        }
-        let closemenu = document.getElementById("closeMenu")
-        closemenu.onclick = function () {
-            thanhMenu.classList.remove("show");
-        } 
+    const sidebarMenu = document.getElementById('sidebarMenu');
+    let btn = document.querySelector("#menuBtn")
+    btn.addEventListener('click', function() {
+        sidebarMenu.classList.toggle('show');
+    });
+    let closemenu = document.getElementById("closeMenu")
+    closemenu.onclick = function () {
+        sidebarMenu.classList.remove("show");
+    } 
 }    
