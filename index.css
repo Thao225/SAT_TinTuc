@@ -59,6 +59,8 @@ body {
     top : 0;
     z-index: 999;
 }
+
+/*---------- NEWS -----------------------------------------------------------*/
 section {
     width : 100%;
     padding : 0;
@@ -75,13 +77,29 @@ h1.tieude{
     padding : 50px 20px 20px;
     border-bottom: 2px solid rgba(244, 235, 235, 0.401);
 }
-
-/*---------- TIN NOI BAT -----------------------------------------------------------*/
-.tinNoiBat {
+#tinNoiBat, #baoChi {
     background : linear-gradient(to bottom, #321d5ea1, rgba(0, 0, 0, 0.743));
     width : 100%;
     margin : 0 auto;
 }
+#thongBao, #suKien {
+    background : linear-gradient(to bottom, rgba(0, 0, 0, 0.743), #321d5ea1);
+    width : 100%;
+    margin : 0 auto;
+}
+.newsItem h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.newsItem p {
+    font-size: 1rem;
+    color: #c9bdbd;
+}
+/*---------- TIN NOI BAT -----------------------------------------------------------*/
+
+
+/*---------- TIN NOI BAT -----------------------------------------------------------*/
 .gallery {
     width: 100%;
     max-width: 800px;
@@ -129,4 +147,8 @@ h1.tieude{
 }
 
 /*---------- TIN NOI BAT -----------------------------------------------------------*/
-
+.newsItem {
+    width : 80%;
+    margin : 0 auto;
+    padding : 2rem;
+}

@@ -23,7 +23,7 @@
         display : block;
         padding : 5px;
     }
-    
+
 /* -----------------Thanh menu-------------------------------------- */
     #sidebarMenu {
         position: fixed;
@@ -108,5 +108,43 @@
         padding : 5px;
     }
 /* -----------------TIN NOI BAT-------------------------------------- */
-    
+    h1.tieude {
+        font-size: 1.5rem;
+        padding : 10px;
+        margin : 0 auto 0.5rem;
+        width : 60%;
+        line-height: 2rem;
+    }
+    .gallery {
+        width : 300px;
+        margin : 0 auto;
+    }
+    .listImg {
+        width : 100%;
+    }
+    .listImg .image{
+        flex: 0 0 300px;
+        height : 200px;
+    }
+    .listImg img {
+        width : 300px;
+        height : 150px;
+    }
+    .imgText {
+        font-size : 0.8rem;
+        font-weight: bold;
+        padding : 15px;
+    }
+    .btn {
+        padding : 0px;
+        font-size : 0.5rem;
+    }   
+    .newsItem h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .newsItem p {
+        font-size: 0.8rem;
+        color: #c9bdbd;
+    }
 }
