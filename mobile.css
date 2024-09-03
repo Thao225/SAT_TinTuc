@@ -16,6 +16,14 @@
         --tim : #321d5e;
         --tieudephu : #52407b;
     }
+    .tieude h1 {
+        width : 60%;
+        margin : 0 auto;
+        font-size: 1.2rem;
+        display : block;
+        padding : 5px;
+    }
+    
 /* -----------------Thanh menu-------------------------------------- */
     #sidebarMenu {
         position: fixed;
@@ -99,6 +107,6 @@
         font-weight: 500;
         padding : 5px;
     }
-/* -----------------Thanh menu-------------------------------------- */
+/* -----------------TIN NOI BAT-------------------------------------- */
     
 }

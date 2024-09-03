@@ -63,4 +63,70 @@ section {
     width : 100%;
     padding : 0;
     z-index :10;
+    color : white;
+    margin-bottom: 4rem;
 }
+h1.tieude{
+    width : 60%;
+    margin : 0 auto;
+    color : white;
+    font-size: 1.8rem;
+    display : block;
+    padding : 50px 20px 20px;
+    border-bottom: 2px solid rgba(244, 235, 235, 0.401);
+}
+
+/*---------- TIN NOI BAT -----------------------------------------------------------*/
+.tinNoiBat {
+    background : linear-gradient(to bottom, #321d5ea1, rgba(0, 0, 0, 0.743));
+    width : 100%;
+    margin : 0 auto;
+}
+.gallery {
+    width: 100%;
+    max-width: 800px;
+    height : auto;
+    margin : 0 auto;
+    padding : 2rem 0;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+.listImg {
+    transition : transform 0.6s ease-in-out;
+}
+.listImg .image{
+    width : 800px;
+    height : 500px;
+}
+.listImg img {
+    width : 800px;
+    height : 400px;
+}
+.imgText {
+    font-size : 1rem;
+    font-weight: bold;
+    padding : 15px;
+    color : white;
+}
+.btn {
+    font-size : 2rem;
+    padding : 5px;
+    color: #ffffff66;
+    cursor : pointer;
+    position: absolute;
+    top : 40%;
+}
+.btn > i:hover{
+    transform: scale(1.2);
+    color: #ffffff;
+}
+.prev {
+    left : 1rem;
+} 
+.next {
+    right : 1rem;
+}
+
+/*---------- TIN NOI BAT -----------------------------------------------------------*/
+
