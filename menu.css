@@ -1,0 +1,155 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* <----------THANH MENU START------------------------> */
+.mucLucs{
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.logoTruong{
+    padding-left: 3rem;
+    margin: 5px auto;
+    width : 40%;
+}
+#logoTruong{
+    width: 80%;
+}
+nav.mucLucs{
+    width : 100%;
+    margin : 0;
+}
+ul.mucLucs {
+    justify-content: center;
+    align-content: center;
+    font-size: 1rem;
+}
+.mucLucs>li>a{
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    color: #321d5e;
+    font-weight: bold;
+    margin : 6px auto;
+}
+ul.mucLucs>li>a:hover{
+    color: #b9a2d8;
+}
+/* ------SUBMENU----- */
+ul.mucLuc{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    background-color: white;
+    display: none;
+    position: absolute;
+    border-radius:0 0 5% 5%;
+}
+ul.mucLuc>li>a{
+    text-decoration: none;
+    color: #321d5e;
+}
+ul.mucLuc>li>a:hover{
+    color: #b9a2d8;
+}
+.sub:hover .mucLuc{
+    display: block ;
+}
+.mucLuc>li:first-child{
+    margin-top: 1.5rem;
+}
+.mucLuc>li{
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    margin-left: 1.5rem;
+}
+#closeMenu {
+    position : absolute;
+    right : 1rem;
+    bottom : 5px;
+    padding : 0.8rem 1rem;
+    background-color: var(--tim);
+    display : none;
+    border : 0.5px solid gray;
+    font-weight: bold;
+    color : white;
+}
+
+/* <----------RESPONSIVE THANH MENU------------------------> */
+@media screen and (max-width : 950px) {
+    * {
+        padding : 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size : 14px;
+    }
+}
+@media screen and (max-width : 767px) {
+    * {
+        font-size : 12px; 
+        max-width: 100%;
+    }
+    :root {
+        --tim : #321d5e;
+        --tieudephu : #52407b;
+    }
+    .thanhmenu {
+        display : none;
+        width : 100vw;
+        margin : 0;
+        position : relative;
+    } 
+    .logoTruong {
+        display : none;
+    }
+    .menuDt {
+        display : block; 
+        z-index : 9999;
+        background-color : white;
+        display : flex;
+        margin : 0;
+        width : 100%;
+    }
+    .menuDt img {
+        width : 20rem;
+    }
+    #menuBtn {
+        display : flex;
+        width : 3rem;
+        height : 3rem;
+        padding : 1rem;
+        background-color: var(--tim);
+        align-items: center;
+        z-index : 1000;
+        cursor: pointer;
+        margin : 0.5rem 1rem;
+        color : white;
+        margin-left : auto;
+    }
+    #gotoTop {
+        right : 10px;
+        bottom : 20px;
+        width : 30px;
+        height : 30px;
+        font-size: 20px;
+        font-weight: 500;
+        padding : 5px;
+    }
+    .mucLucs {
+        flex-direction: column;
+        position : relative;
+    }
+    .sub > ul {
+        width : 70%;
+        position : relative;
+        margin-left: auto;
+        margin-right: 3rem;
+    } 
+    .sub > ul > li {
+        border-bottom : 1px solid lightgray;
+    }
+    #closeMenu {
+        display : block;
+    }
+}

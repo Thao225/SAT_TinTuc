@@ -1,0 +1,66 @@
+* {
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --tim : #321d5e;
+    --tieudephu : #52407b;
+}
+.flex {
+    display : flex;
+}
+a {
+    text-decoration: none;
+}
+.noList {
+    list-style-type : none;
+}
+.hide {
+    display : none !important;
+}
+.show {
+    display : block !important;
+}
+.undersub {
+    scroll-margin-top: 200px;
+}
+.center {
+    align-items: center;
+    justify-content: center;
+}
+#gotoTop {
+    right : 30px;
+    bottom : 50px;
+    position : fixed;
+    width : 50px;
+    height : 50px;
+    text-align: center;
+    background-color: var(--tieudephu);
+    color : white;
+    font-size: 30px;
+    font-weight: 800;
+    z-index : 999;
+    padding : 8px;
+    cursor : pointer;
+}
+.menuDt {
+    display : none;
+}
+body {
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -10;
+}
+.sticky {
+    position: sticky;
+    top : 0;
+    z-index: 999;
+}
+section {
+    width : 100%;
+    padding : 0;
+    z-index :10;
+}
