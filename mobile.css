@@ -1,0 +1,80 @@
+
+@media screen and (max-width : 950px) {
+    * {
+        padding : 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size : 14px;
+    }
+}
+@media screen and (max-width : 767px) {
+    * {
+        font-size : 12px; 
+        max-width: 100%;
+    }
+    :root {
+        --tim : #321d5e;
+        --tieudephu : #52407b;
+    }
+/* -----------------Thanh menu-------------------------------------- */
+    .thanhmenu {
+        display : none;
+        width : 100vw;
+        margin : 0;
+        position : relative;
+    } 
+    .logoTruong {
+        display : none;
+    }
+    .menuDt {
+        display : block; 
+        z-index : 9999;
+        background-color : white;
+        display : flex;
+        margin : 0;
+        width : 100%;
+    }
+    .menuDt img {
+        width : 20rem;
+    }
+    #menuBtn {
+        display : flex;
+        width : 3rem;
+        height : 3rem;
+        padding : 1rem;
+        background-color: var(--tim);
+        align-items: center;
+        z-index : 1000;
+        cursor: pointer;
+        margin : 0.5rem 1rem;
+        color : white;
+        margin-left : auto;
+    }
+    #gotoTop {
+        right : 10px;
+        bottom : 20px;
+        width : 30px;
+        height : 30px;
+        font-size: 20px;
+        font-weight: 500;
+        padding : 5px;
+    }
+    .mucLucs {
+        flex-direction: column;
+        position : relative;
+    }
+    .sub > ul {
+        width : 70%;
+        position : relative;
+        margin-left: auto;
+        margin-right: 3rem;
+    } 
+    .sub > ul > li {
+        border-bottom : 1px solid lightgray;
+    }
+    #closeMenu {
+        display : block;
+    }
+/* -----------------Thanh menu-------------------------------------- */
+    
+}
