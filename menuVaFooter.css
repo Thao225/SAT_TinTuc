@@ -78,10 +78,10 @@ ul.mucLuc>li>a:hover{
 /* <----------FOOTER START------------------------> */
 footer{
     margin: 0;
-    padding: 2rem 0;
+    padding-top: 2rem;
     color: white;
     width: 100%;
-    background-color: #1f203b;
+    background-color: rgb(31 32 59);
 }
 .footer{
     width: 80%;
@@ -126,6 +126,7 @@ footer a{
 }
 .thongtinNDF>li>a>i{
     padding-right: 10px;
+    padding-top : 5px;
 }
 .noidungFooters:first-child{
     width: 45%;
@@ -147,6 +148,9 @@ footer a{
 .tenNoiDungFooters {
     padding-top  : 4.8px;
     align-items: center;
+}
+.tenNoiDungFooters i {
+    padding-top : 12px;
 }
 .tenNoiDungFooter{
     padding-top : 12px;

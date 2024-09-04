@@ -103,7 +103,7 @@ window.onload = function () {
 window.addEventListener('scroll', function () {
     var value = window.scrollY;
     bg.style.top = value *0.5 + 'px';
-    moon.style.left = value *0.5 + 'px';
-    text.style.top = -value *0.5 + 'px';
-    mountain.style.top = value *0.5 + 'px';
+    moon.style.left = value *0.2 + 'px';
+    text.style.top = -value *0.2 + 'px';
+    mountain.style.top = value *0.2 + 'px';
 }); 
