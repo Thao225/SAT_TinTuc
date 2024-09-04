@@ -132,6 +132,7 @@
         cursor: pointer;
         color: white;
         text-align: right;
+        bottom : 1rem;
     }
     .menuDt {
         z-index : 9999;
