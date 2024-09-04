@@ -67,6 +67,7 @@ section {
     z-index :10;
     color : white;
     margin-bottom: 4rem;
+    padding-bottom: 2rem;
 }
 h1.tieude{
     width : 60%;
@@ -87,39 +88,65 @@ h1.tieude{
     width : 100%;
     margin : 0 auto;
 }
-div.newsItem {
-    background-color: lavender;
+.newsItem {
+    background-color: white;
     border-radius: 1rem;
-    margin : 2rem auto 0;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1000px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.newsItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.newsContent {
+    display: flex;
+    align-items:  flex-start;;
+    gap: 1.5rem;
+    text-decoration: none;
+    overflow: hidden;
+}
+.newsContent .mota {
+    flex: 1; 
+}
+.newsContent .mota:hover {
+    text-decoration: underline; 
+}
+.newsImg {
+    width: 400px;
+    height: 250px;
+    border-radius: 1rem;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.newsImg:hover {
+    transform: scale(1.05);
+}
+.mota {
+    flex: 1;
+    padding: 0.5rem;
 }
 .newsItem h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    color: #333;
     margin-bottom: 0.5rem;
-    color: rgb(26, 12, 40);
-    text-align: center;
+    font-weight: bold;
+    text-align: left;
 }
 .newsItem p {
     font-size: 1rem;
-    color: #2d1313;
-    
-}
-.newsContent {
-    display : flex;
-    align-items: center;
-    padding : 1rem;
-}
-.mota {
-    padding : 1rem;
-}
-.newsImg {
-    width: 500px;
-    height: 300px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0.5rem 0;
 }
 
 /*---------- TIN NOI BAT -----------------------------------------------------------*/
 .gallery {
     width: 100%;
-    max-width: 800px;
+    max-width: 700px;
     height : auto;
     margin : 0 auto;
     padding : 2rem 0;
@@ -131,11 +158,11 @@ div.newsItem {
     transition : transform 0.6s ease-in-out;
 }
 .listImg .image{
-    width : 800px;
+    width : 700px;
     height : 500px;
 }
 .listImg img {
-    width : 800px;
+    width : 700px;
     height : 400px;
 }
 .imgText {
@@ -163,9 +190,67 @@ div.newsItem {
     right : 1rem;
 }
 
-/*---------- TIN NOI BAT -----------------------------------------------------------*/
-.newsItem {
-    width : 80%;
-    margin : 0 auto;
-    padding : 2rem;
+/*---------- FULL ARTICLE ------------------------*/
+.fullArticle {
+    display: none; 
 }
+#fullArticle {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.918); 
+    color: #ffffff !important;
+    overflow-y: auto;
+    z-index: 1000; 
+    padding: 2rem;
+    box-sizing: border-box;
+    display: none; 
+}
+#fullArticle.show {
+    display: block;
+}
+#articleTitle {
+    display : block;
+    text-align: center;
+    margin-top : 2rem;
+}
+#fullArticle h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#fullArticle img {
+    width: 50%;
+    height: auto;
+    margin : 0 auto;
+    display: block;
+    margin-bottom: 1rem;
+} 
+#articleText {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+} 
+#closeArticle {
+    background-color: #0a1f36;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    position: absolute; 
+    top: 1rem;
+    right: 1rem;
+}
+#closeArticle:hover {
+    background-color: #0056b3;
+}
+#fullArticle ul {
+    margin: 10px 0;
+    padding: 0;
+    list-style-type: disc;
+}
+

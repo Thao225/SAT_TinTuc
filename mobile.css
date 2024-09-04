@@ -248,22 +248,19 @@
     .btn {
         padding : 0px;
         font-size : 0.5rem;
-    }   
-    .newsItem h3 {
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
-    }
-    .newsItem p {
-        font-size: 0.8rem;
-    }
+    }  
     .newsContent {
-        display : block;
-        width : 100%;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .newsImg {
         width: 100%;
-        padding : 0 10%;
         height: auto;
-
+    }
+    .newsItem h3 {
+        font-size: 1.3rem;
+    }
+    .newsItem p {
+        font-size: 0.95rem;
     }
 }

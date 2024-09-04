@@ -41,7 +41,6 @@ window.onload = function () {
     let clear = setInterval(() => { changeImg()}, 2500);
     let prev = document.querySelector(".btnGT .prev")
     let next = document.querySelector(".btnGT .next")
-    console.log(prev, next)
         prev.onclick = function() {
             clearInterval(clear);
             if (current == 0) {
@@ -60,4 +59,31 @@ window.onload = function () {
             changeImg();
             clear = setInterval(() => { changeImg()}, 2500);
         }
+
+//---------- HIEN FULL BAI -----------------------------------------------------------//
+    let newsItems = document.querySelectorAll('.newsItem a');
+    let fullArticleSection = document.getElementById('fullArticle');
+    let articleTitle = document.getElementById('articleTitle');
+    let articleImg = document.getElementById('articleImg');
+    let articleText = document.getElementById('articleText');
+    let closeArticleBtn = document.getElementById('closeArticle');
+    newsItems.forEach(item => {
+        item.addEventListener('click', (event) => {
+            event.preventDefault();
+            let title = item.querySelector('h3').innerText;
+            let imgSrc = item.querySelector('img').src;
+            let fullArticleElement = document.querySelector('.fullArticle');
+            let text = fullArticleElement.innerHTML; 
+            console.log(text); 
+            
+            articleTitle.innerText = title;
+            articleImg.src = imgSrc;
+            articleText.innerHTML = text;
+            fullArticleSection.classList.add('show'); 
+        });
+    });
+    closeArticleBtn.addEventListener('click', () => {
+        fullArticleSection.classList.remove('show'); 
+    });
+
 }    
