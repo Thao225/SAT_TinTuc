@@ -227,10 +227,10 @@ h1.tieude{
 #fullArticle h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color : rgb(124, 98, 195);
+    color : rgb(158, 42, 42);
     width : 70%;
     margin  : 0 auto 1rem;
-    text-shadow: 2px 2px 2px #d0a3de;
+    text-shadow: 2px 2px 2px #88818a;
 }
 .plusList li::before {
     content: "+"; 
