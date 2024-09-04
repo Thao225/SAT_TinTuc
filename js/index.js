@@ -97,7 +97,6 @@ window.onload = function () {
     let bg = document.getElementById("bg")
     let moon = document.getElementById("moon")
     let mountain = document.getElementById("mountain")
-    let road = document.getElementById("road")
     let text = document.getElementById("text")
 }   
 window.addEventListener('scroll', function () {
