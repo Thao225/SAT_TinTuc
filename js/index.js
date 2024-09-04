@@ -72,18 +72,26 @@ window.onload = function () {
             event.preventDefault();
             let title = item.querySelector('h3').innerText;
             let imgSrc = item.querySelector('img').src;
-            let fullArticleElement = document.querySelector('.fullArticle');
+            let fullArticleElement = item.querySelector('.fullArticle');
             let text = fullArticleElement.innerHTML; 
-            console.log(text); 
-            
             articleTitle.innerText = title;
             articleImg.src = imgSrc;
             articleText.innerHTML = text;
             fullArticleSection.classList.add('show'); 
+            document.body.style.overflow = 'hidden';
         });
     });
     closeArticleBtn.addEventListener('click', () => {
         fullArticleSection.classList.remove('show'); 
+        document.body.style.overflow = '';
+    });
+    $(".news .mucLuc a").click(function(event) {
+        event.preventDefault(); 
+        let targetId = $(this).attr('href');
+        let targetElement = $(targetId); 
+        $('html, body').animate({
+            scrollTop: targetElement.offset().top - 50 
+        }, 500);
     });
 
 }    

@@ -80,7 +80,6 @@
     .mucLuc li {
         margin : 10px;
     }
-
     .mucLuc > li > a {
         border-bottom : 1px solid lightgray;
         margin : 0;
@@ -102,7 +101,6 @@
         text-align: right;
     }
     .menuDt {
-        display : block; 
         z-index : 9999;
         background-color : white;
         display : flex;
@@ -257,10 +255,36 @@
         width: 100%;
         height: auto;
     }
+    #fullArticle img {
+        width: 80%;
+        height: auto;
+        margin : 0 auto;
+        display: block;
+        margin-bottom: 1rem;
+    }
     .newsItem h3 {
         font-size: 1.3rem;
     }
     .newsItem p {
         font-size: 0.95rem;
+    }
+    #fullArticle {
+        margin-top : 2rem;
+    }
+    #fullArticle h1 {
+        font-size: 1.4rem;
+    }
+    .baiBao {
+        width : 90%;
+        background-color: rgb(238, 232, 223);
+        color : white;
+        margin : 0 auto;
+        padding : 2rem;
+        box-sizing: border-box;
+    }
+    #closeArticle {
+        top: 2.5rem;
+        right: 5px;
+        padding : 5px 8px;
     }
 }

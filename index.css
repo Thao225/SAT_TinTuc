@@ -53,6 +53,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     z-index: -10;
+    color : white;
 }
 .sticky {
     position: sticky;
@@ -65,14 +66,12 @@ section {
     width : 100%;
     padding : 0;
     z-index :10;
-    color : white;
     margin-bottom: 4rem;
     padding-bottom: 2rem;
 }
 h1.tieude{
     width : 60%;
     margin : 0 auto;
-    color : white;
     font-size: 1.8rem;
     display : block;
     padding : 50px 20px 20px;
@@ -103,11 +102,10 @@ h1.tieude{
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 .newsContent {
-    display: flex;
-    align-items:  flex-start;;
     gap: 1.5rem;
     text-decoration: none;
     overflow: hidden;
+    padding : 0.8rem;
 }
 .newsContent .mota {
     flex: 1; 
@@ -121,6 +119,8 @@ h1.tieude{
     border-radius: 1rem;
     object-fit: cover;
     transition: transform 0.3s ease;
+    float : left;
+    padding-right: 10px;
 }
 .newsImg:hover {
     transform: scale(1.05);
@@ -134,7 +134,7 @@ h1.tieude{
     color: #333;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
 .newsItem p {
     font-size: 1rem;
@@ -194,22 +194,30 @@ h1.tieude{
 .fullArticle {
     display: none; 
 }
+.fullArticle a {
+    color : rgb(97, 92, 92);
+}
 #fullArticle {
     position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.918); 
-    color: #ffffff !important;
+    background-color: rgba(128, 122, 122, 0.997); 
+    color: #ffffff;
     overflow-y: auto;
     z-index: 1000; 
     padding: 2rem;
     box-sizing: border-box;
     display: none; 
 }
-#fullArticle.show {
-    display: block;
+.baiBao {
+    width : 80%;
+    background-color: rgb(238, 232, 223);
+    color : white;
+    margin : 0 auto;
+    padding : 2rem;
+    box-sizing: border-box;
 }
 #articleTitle {
     display : block;
@@ -219,6 +227,21 @@ h1.tieude{
 #fullArticle h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
+    color : rgb(124, 98, 195);
+    width : 70%;
+    margin  : 0 auto 1rem;
+    text-shadow: 2px 2px 2px #d0a3de;
+}
+.plusList li::before {
+    content: "+"; 
+    margin-right: 10px; 
+    color: var(--tim);
+}
+.plusList li {
+    text-indent : 20px;
+}
+.plusList ul {
+    list-style-type:none ;
 }
 #fullArticle img {
     width: 50%;
@@ -229,9 +252,13 @@ h1.tieude{
 } 
 #articleText {
     font-size: 1rem;
-    color: white;
+    color: var(--tim);
     line-height: 1.6;
     margin-bottom: 1rem;
+}
+#articleText > h2 {
+    text-indent: 2.5rem;
+    color :rgb(154, 48, 48)
 } 
 #closeArticle {
     background-color: #0a1f36;
@@ -248,9 +275,5 @@ h1.tieude{
 #closeArticle:hover {
     background-color: #0056b3;
 }
-#fullArticle ul {
-    margin: 10px 0;
-    padding: 0;
-    list-style-type: disc;
-}
+
 
