@@ -77,11 +77,13 @@ window.onload = function () {
             articleTitle.innerText = title;
             articleImg.src = imgSrc;
             articleText.innerHTML = text;
+            closeArticleBtn.style.position = `fixed`;
             fullArticleSection.classList.add('show'); 
             document.body.style.overflow = 'hidden';
         });
     });
     closeArticleBtn.addEventListener('click', () => {
+        closeArticleBtn.style.position = `absolute`;
         fullArticleSection.classList.remove('show'); 
         document.body.style.overflow = '';
     });
