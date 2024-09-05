@@ -350,8 +350,8 @@
         box-sizing: border-box;
     }
     #closeArticle {
-        top: 2.5rem;
-        right: 5px;
+        top: 5rem;
+        right: 25px;
         padding : 5px 8px;
     }
     #articleImg {
